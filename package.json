@@ -46,6 +46,5 @@
   },
   "devDependencies": {
     "@types/axios": "^0.14.0"
-  },
-  "proxy": "https://dry-beach-65126-6548e3961c52.herokuapp.com/"
+  }
 }
