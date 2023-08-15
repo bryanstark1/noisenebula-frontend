@@ -1,9 +1,3 @@
-.library-page .playlist-header .back-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 .library-page .playlist-header {
   display: flex;
   justify-content: space-between;
