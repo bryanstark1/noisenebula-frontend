@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: inherit;
+}
+
+.app-name {
+  font-size: 2rem;
+  color: orange;
+  font-weight: 300;
+}
+
+.app-name span {
+  color: #28282B;
+  font-weight: 700;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header button {
+  font-family: 'Open Sans', sans-serif;
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #28282B;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+nav .add-song {
+  color: orange;
+  transition: transform .25s ease-in-out;
+}
+
+nav .add-song:hover {
+  transform: scale(1.2);
+  
+}
+
+.cloud-logo {
+  color: #28282B;
+}

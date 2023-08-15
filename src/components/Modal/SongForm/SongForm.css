@@ -1,0 +1,85 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.form-container h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.form-container .grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.form-container label {
+  text-align: end;
+  margin: auto 0;
+  text-align: justify;
+}
+
+.form-container label:not(.file-upload-label) {
+  display: none;
+}
+
+.form-container .file-upload-label {
+  text-align: center;
+}
+
+.form-container .file-upload-input {
+  padding: 0;
+  border-radius: 0;
+  margin: auto;
+}
+
+.form-container input {
+  color: #5e5e5e;
+  padding: .5rem;
+  border-radius: 20px;
+}
+
+.form-container button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,.2);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .form-container input:not(.file-upload-input) {
+    font-size: 1.25rem;
+  }
+
+
+  .file-upload-label,
+  .file-upload-input {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .form-container .grid-contaner {
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .form-container label {
+    display: block;
+    font-size: 1.5rem;
+    text-align: end;
+    margin: auto 0;
+    text-align: justify;
+  }
+
+  .form-container input {
+    font-size: 1.5rem
+  }
+};

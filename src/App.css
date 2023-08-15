@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  top: 75px;
+  padding-bottom: 15rem;
+  overflow: hidden;
+}
+
+main h1 {
+  color: #28282B;
+  align-self: flex-end;
+  margin-right: 2rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.songs-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.songs-list td,
+.songs-list th {
+  text-align: left;
+}
+
+.songs-list th:nth-child(5), 
+.songs-list td:nth-child(5) {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .songs-list th:nth-child(5), 
+  .songs-list td:nth-child(5) {
+  display: table-cell;
+  }
+};

@@ -1,0 +1,78 @@
+.song-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  text-align: start;
+}
+
+.song-card img {
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
+  border-radius: 10px;
+}
+
+.song-card:hover h3,
+.song-card:hover h4 {
+  color: #28282B;
+}
+
+.song-card p {
+  text-align: start;
+}
+
+.song-card h3,
+.song-card h4 {
+  margin: 0 .6rem;
+  color: #5e5e5e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-card h3 {
+  font-size: 1rem;
+}
+
+.song-card h4 {
+  font-size: .80rem;
+}
+
+.button-container {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 200px;
+  height: 200px;
+}
+
+.button-container {
+  display: none;
+  margin-bottom: 1rem;
+  background-color: rgba(91, 112, 131, 0.4);
+  border-radius: 10px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.song-card .image-container:hover .button-container {
+  display: flex;
+}
+
+.song-card .play-button {
+  margin-left: 0.75rem;
+}
+
+.song-card .favorite-button,
+.song-card .options-button {
+  margin-bottom: 0.4rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, .8);
+}
+
+.song-card .options-button:hover svg,
+.song-card .favorite-button:hover svg {
+    color: rgba(255, 165, 0, .8) !important;
+}
